@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.400475">
+<testcase classname="Cadastro" name="Criar cadastro" time="19.400475">
+<system-out><![CDATA[Dado que eu seja um usuario novo............................................passed
+Quando eu acessar o site do seu barriga e clicar em Nâo tenho cadastro......passed
+Entao Serei redirecionado para página de cadastro efetuarei o cadastro......passed
+]]></system-out>
+</testcase>
+</testsuite>
