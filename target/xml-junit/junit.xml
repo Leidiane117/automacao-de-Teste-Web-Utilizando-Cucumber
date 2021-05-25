@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.400475">
-<testcase classname="Cadastro" name="Criar cadastro" time="19.400475">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="15.026514">
+<testcase classname="Cadastro" name="Criar cadastro" time="7.589258">
 <system-out><![CDATA[Dado que eu seja um usuario novo............................................passed
 Quando eu acessar o site do seu barriga e clicar em Nâo tenho cadastro......passed
 Entao Serei redirecionado para página de cadastro efetuarei o cadastro......passed
+]]></system-out>
+</testcase>
+<testcase classname="Criar conta" name="Cadastrar uma conta" time="7.437256">
+<system-out><![CDATA[Dado Que eu já seja um usuário cadastrado e deseje cadastrar uma conta......passed
+Quando Eu clicar no botão cadastrar conta...................................passed
+Então Serei redirecionado para página de cadastro efetuarei o cadastro de uma conta.passed
 ]]></system-out>
 </testcase>
 </testsuite>

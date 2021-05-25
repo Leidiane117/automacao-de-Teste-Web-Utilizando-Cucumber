@@ -1,6 +1,6 @@
 package steps;
-import cucumber.api.java.es.Dado;
-import cucumber.api.java.it.Quando;
+import cucumber.api.java.pt.Dado;
+import cucumber.api.java.pt.Quando;
 import cucumber.api.java.pt.Entao;
 import pageObjects.CadastroPage;
 

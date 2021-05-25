@@ -1,3 +1,4 @@
+#coding:utf-8
 #language: pt
 
 Funcionalidade: Cadastro
