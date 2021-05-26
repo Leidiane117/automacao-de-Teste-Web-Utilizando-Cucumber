@@ -1,0 +1,226 @@
+Index: src/test/resources/features/Cadastro.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#language: pt\r\n\r\nFuncionalidade: Cadastro\r\n\r\n  Contexto:\r\n    Dado que eu seja um usuario novo\r\n\r\n  Cenario: Criar cadastro\r\n    Quando eu acessar o site do seu barriga e clicar em Nâo tenho cadastro\r\n    Entao Serei redirecionado para página de cadastro efetuarei o cadastro\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/features/Cadastro.feature b/src/test/resources/features/Cadastro.feature
+--- a/src/test/resources/features/Cadastro.feature	(revision 6cda9d4b990267ebb381134c23025ef822e901d8)
++++ b/src/test/resources/features/Cadastro.feature	(date 1621448569961)
+@@ -1,3 +1,4 @@
++#coding:utf-8
+ #language: pt
+ 
+ Funcionalidade: Cadastro
+Index: target/xml-junit/junit.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<testsuite failures=\"0\" name=\"cucumber.runtime.formatter.JUnitFormatter\" skipped=\"0\" tests=\"1\" time=\"19.400475\">\r\n<testcase classname=\"Cadastro\" name=\"Criar cadastro\" time=\"19.400475\">\r\n<system-out><![CDATA[Dado que eu seja um usuario novo............................................passed\r\nQuando eu acessar o site do seu barriga e clicar em Nâo tenho cadastro......passed\r\nEntao Serei redirecionado para página de cadastro efetuarei o cadastro......passed\r\n]]></system-out>\r\n</testcase>\r\n</testsuite>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/xml-junit/junit.xml b/target/xml-junit/junit.xml
+--- a/target/xml-junit/junit.xml	(revision 6cda9d4b990267ebb381134c23025ef822e901d8)
++++ b/target/xml-junit/junit.xml	(date 1620832368007)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="19.400475">
+-<testcase classname="Cadastro" name="Criar cadastro" time="19.400475">
++<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="5.454948">
++<testcase classname="Cadastro" name="Criar cadastro" time="5.454948">
+ <system-out><![CDATA[Dado que eu seja um usuario novo............................................passed
+ Quando eu acessar o site do seu barriga e clicar em Nâo tenho cadastro......passed
+ Entao Serei redirecionado para página de cadastro efetuarei o cadastro......passed
+Index: src/test/java/steps/MovimentacaoStep.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/steps/MovimentacaoStep.java b/src/test/java/steps/MovimentacaoStep.java
+--- a/src/test/java/steps/MovimentacaoStep.java	(revision 6cda9d4b990267ebb381134c23025ef822e901d8)
++++ b/src/test/java/steps/MovimentacaoStep.java	(date 1621456383536)
+@@ -1,0 +1,29 @@
++package steps;
++import cucumber.api.java.es.Dado;
++import cucumber.api.java.it.Quando;
++import cucumber.api.java.pt.Entao;
++import pageObjects.CriarMovimentacaoPage;
++
++public class MovimentacaoStep {
++    CriarMovimentacaoPage movimentacao;
++
++
++    @Dado("^que eu ja tenha um cadastro e desejo criar uma movimentacao$")
++    public void criarMovi() throws Throwable {
++        movimentacao = new CriarMovimentacaoPage();// Write code here that turns the phrase above into concrete actions
++
++    }
++
++    @Quando("^eu clicar em criar movimentacao")
++    public void clicarMov() throws Throwable {
++        movimentacao.preencherForm(); // Write code here that turns the phrase above into concrete actions
++
++    }
++
++    @Entao("^receberei a mensagem que foi criada com sucesso a movimentação$")
++    public void redirecionamento() throws Throwable {
++      movimentacao.mensagem();
++
++    }
++
++}
+\ No newline at end of file
+Index: src/main/java/pageObjects/CriarContaPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/pageObjects/CriarContaPage.java b/src/main/java/pageObjects/CriarContaPage.java
+--- a/src/main/java/pageObjects/CriarContaPage.java	(revision 6cda9d4b990267ebb381134c23025ef822e901d8)
++++ b/src/main/java/pageObjects/CriarContaPage.java	(date 1621456906835)
+@@ -1,0 +1,4 @@
++package pageObjects;
++
++public class CriarContaPage {
++}
+Index: src/test/resources/features/Movimentacao.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/features/Movimentacao.feature b/src/test/resources/features/Movimentacao.feature
+--- a/src/test/resources/features/Movimentacao.feature	(revision 6cda9d4b990267ebb381134c23025ef822e901d8)
++++ b/src/test/resources/features/Movimentacao.feature	(date 1621448952573)
+@@ -1,0 +1,12 @@
++#language:pt
++
++  Funcionalidade : Movimentação Financeira
++  Contexto:
++    Dado que eu seja um usuario já cadastrado no sistema
++
++  Cenário: Criar Movimentação
++  Quando  eu entrar com meu login senha
++  Entao serei redirecionado para a pagina de cadastro de moviemntacao
++  E irei preencher os dados para realização da movimentação
++
++
+Index: target/json-cucumber-reports/cucumber.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[\r\n  {\r\n    \"line\": 3,\r\n    \"elements\": [\r\n      {\r\n        \"line\": 5,\r\n        \"name\": \"\",\r\n        \"description\": \"\",\r\n        \"type\": \"background\",\r\n        \"keyword\": \"Contexto\",\r\n        \"steps\": [\r\n          {\r\n            \"result\": {\r\n              \"duration\": 292495300,\r\n              \"status\": \"passed\"\r\n            },\r\n            \"line\": 6,\r\n            \"name\": \"que eu seja um usuario novo\",\r\n            \"match\": {\r\n              \"location\": \"CadastroStep.que_eu_seja_um_usuario_novo()\"\r\n            },\r\n            \"keyword\": \"Dado \"\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"before\": [\r\n          {\r\n            \"result\": {\r\n              \"duration\": 16755642800,\r\n              \"status\": \"passed\"\r\n            },\r\n            \"match\": {\r\n              \"location\": \"Hooks.configurarNavegador()\"\r\n            }\r\n          }\r\n        ],\r\n        \"line\": 8,\r\n        \"name\": \"Criar cadastro\",\r\n        \"description\": \"\",\r\n        \"id\": \"cadastro;criar-cadastro\",\r\n        \"after\": [\r\n          {\r\n            \"result\": {\r\n              \"duration\": 448777000,\r\n              \"status\": \"passed\"\r\n            },\r\n            \"match\": {\r\n              \"location\": \"Hooks.fecharNavegador()\"\r\n            }\r\n          }\r\n        ],\r\n        \"type\": \"scenario\",\r\n        \"keyword\": \"Cenario\",\r\n        \"steps\": [\r\n          {\r\n            \"result\": {\r\n              \"duration\": 541545000,\r\n              \"status\": \"passed\"\r\n            },\r\n            \"line\": 9,\r\n            \"name\": \"eu acessar o site do seu barriga e clicar em Nâo tenho cadastro\",\r\n            \"match\": {\r\n              \"location\": \"CadastroStep.eu_acessar_o_site_do_seu_barriga_e_clicar_em_Nâo_tenho_cadastro()\"\r\n            },\r\n            \"keyword\": \"Quando \"\r\n          },\r\n          {\r\n            \"result\": {\r\n              \"duration\": 1343909900,\r\n              \"status\": \"passed\"\r\n            },\r\n            \"line\": 10,\r\n            \"name\": \"Serei redirecionado para página de cadastro efetuarei o cadastro\",\r\n            \"match\": {\r\n              \"location\": \"CadastroStep.serei_redirecionado_para_página_de_cadastro()\"\r\n            },\r\n            \"keyword\": \"Entao \"\r\n          }\r\n        ]\r\n      }\r\n    ],\r\n    \"name\": \"Cadastro\",\r\n    \"description\": \"\",\r\n    \"id\": \"cadastro\",\r\n    \"keyword\": \"Funcionalidade\",\r\n    \"uri\": \"src/test/resources/features/Cadastro.feature\",\r\n    \"tags\": []\r\n  }\r\n]
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/json-cucumber-reports/cucumber.json b/target/json-cucumber-reports/cucumber.json
+--- a/target/json-cucumber-reports/cucumber.json	(revision 6cda9d4b990267ebb381134c23025ef822e901d8)
++++ b/target/json-cucumber-reports/cucumber.json	(date 1620832367969)
+@@ -11,7 +11,7 @@
+         "steps": [
+           {
+             "result": {
+-              "duration": 292495300,
++              "duration": 178428000,
+               "status": "passed"
+             },
+             "line": 6,
+@@ -27,7 +27,7 @@
+         "before": [
+           {
+             "result": {
+-              "duration": 16755642800,
++              "duration": 3680614800,
+               "status": "passed"
+             },
+             "match": {
+@@ -42,7 +42,7 @@
+         "after": [
+           {
+             "result": {
+-              "duration": 448777000,
++              "duration": 276566800,
+               "status": "passed"
+             },
+             "match": {
+@@ -55,7 +55,7 @@
+         "steps": [
+           {
+             "result": {
+-              "duration": 541545000,
++              "duration": 436827900,
+               "status": "passed"
+             },
+             "line": 9,
+@@ -67,7 +67,7 @@
+           },
+           {
+             "result": {
+-              "duration": 1343909900,
++              "duration": 871570400,
+               "status": "passed"
+             },
+             "line": 10,
+Index: src/main/java/pageObjects/CriarMovimentacaoPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/pageObjects/CriarMovimentacaoPage.java b/src/main/java/pageObjects/CriarMovimentacaoPage.java
+--- a/src/main/java/pageObjects/CriarMovimentacaoPage.java	(revision 6cda9d4b990267ebb381134c23025ef822e901d8)
++++ b/src/main/java/pageObjects/CriarMovimentacaoPage.java	(date 1621455823090)
+@@ -1,0 +1,55 @@
++package pageObjects;
++import com.github.javafaker.Faker;
++import driver.Driver;
++import org.openqa.selenium.By;
++import org.openqa.selenium.support.ui.ExpectedConditions;
++import org.openqa.selenium.support.ui.Select;
++import org.openqa.selenium.support.ui.WebDriverWait;
++import java.util.Locale;
++
++
++public class CriarMovimentacaoPage extends Driver {
++
++    By botaoMov = By.xpath("//a[contains(text(),'Criar Movimentação')]");
++    By data= By.id("data_transacao");
++    By dataPag= By.id("data_pagamento");
++    By descricao= By.id("descricao");
++    By interessado= By.id("interessado");
++    By valor= By.id("valor");
++    By radius= By.xpath("//button[contains(text(),'Salvar')]");
++    By succes= By.xpath("//div[contains(text(),'Movimentação adicionada com sucesso!')]");
++
++
++   Faker faker = new  Faker(new Locale("pt-BR"));
++   String dataT= faker.date().toString();
++   String dataP = faker.date().toString();
++   String desC= faker.finance().creditCard();
++   String interessaD= faker.artist().name();
++   String valorP= faker.number().toString();
++
++
++public void preencherForm (){
++
++    getDriver().findElement(botaoMov).click();
++    WebDriverWait wait = new WebDriverWait(getDriver(),30); // esperar até que apareça a tag formulario na tela
++    wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("form")));
++    Select tipo = new Select((getDriver().findElement(By.id("tipo")))); //selecionar a opção tipo
++    tipo.selectByIndex(0); //selecionar a primeira opção de acordo com index
++    getDriver().findElement(data).sendKeys(dataT);
++    getDriver().findElement(dataPag).sendKeys(dataP);
++    getDriver().findElement(descricao).sendKeys(desC);
++    getDriver().findElement(interessado).sendKeys(interessaD);
++    getDriver().findElement(valor).sendKeys(valorP);
++    Select conta= new Select((getDriver().findElement(By.id("conta"))));
++    conta.selectByIndex(1);// selecionar o index 1
++    getDriver().findElement(radius).click();
++
++
++}
++
++public void mensagem(){
++getDriver().findElement(succes);
++}
++
++}
++
