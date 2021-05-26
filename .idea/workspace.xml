@@ -200,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622063115629</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="&quot;Remoção pasta Target&quot;">
+      <created>1622063268239</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622063268239</updated>
+    </task>
+    <task id="LOCAL-00008" summary="&quot;Remoção pasta Target&quot;">
+      <created>1622063358834</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1622063358834</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
