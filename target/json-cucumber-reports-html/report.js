@@ -102,4 +102,56 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
+formatter.uri("src/test/resources/features/Mov.feature");
+formatter.feature({
+  "name": "Criar uma movimentação",
+  "description": "",
+  "keyword": "Funcionalidade"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Contexto"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Que eu já seja um usuário cadastrado e deseje cadastrar uma movimentação",
+  "keyword": "Dado "
+});
+formatter.match({
+  "location": "MovStep.queEuJáSejaUmUsuárioCadastradoEDesejeCadastrarUmaMovimentação()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Cadastrar uma movimentação",
+  "description": "",
+  "keyword": "Cenario"
+});
+formatter.step({
+  "name": "Eu clicar no botão cadastrar movimentacao",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "MovStep.euClicarNoBotãoCadastrarMovimentacao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Serei redirecionado para página de cadastro efetuarei o cadastro de uma movimentacao",
+  "keyword": "Então "
+});
+formatter.match({
+  "location": "MovStep.sereiRedirecionadoParaPáginaDeCadastroEfetuareiOCadastroDeUmaMovimentacao()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
 });

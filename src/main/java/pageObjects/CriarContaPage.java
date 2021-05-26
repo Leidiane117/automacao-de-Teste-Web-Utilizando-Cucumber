@@ -39,6 +39,4 @@ public class CriarContaPage extends Driver {
 
     }
 
-
-
 }

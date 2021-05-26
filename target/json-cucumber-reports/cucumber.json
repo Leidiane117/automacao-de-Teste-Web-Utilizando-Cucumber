@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 298977400,
+              "duration": 400429000,
               "status": "passed"
             },
             "line": 7,
@@ -27,7 +27,7 @@
         "before": [
           {
             "result": {
-              "duration": 5179016300,
+              "duration": 4758365300,
               "status": "passed"
             },
             "match": {
@@ -42,7 +42,7 @@
         "after": [
           {
             "result": {
-              "duration": 340676900,
+              "duration": 339765600,
               "status": "passed"
             },
             "match": {
@@ -55,7 +55,7 @@
         "steps": [
           {
             "result": {
-              "duration": 550152600,
+              "duration": 561485800,
               "status": "passed"
             },
             "line": 10,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 1197110300,
+              "duration": 1149266500,
               "status": "passed"
             },
             "line": 11,
@@ -99,7 +99,7 @@
         "steps": [
           {
             "result": {
-              "duration": 140631600,
+              "duration": 168002400,
               "status": "passed"
             },
             "line": 7,
@@ -115,7 +115,7 @@
         "before": [
           {
             "result": {
-              "duration": 4133179000,
+              "duration": 2913141300,
               "status": "passed"
             },
             "match": {
@@ -130,7 +130,7 @@
         "after": [
           {
             "result": {
-              "duration": 319884600,
+              "duration": 414940000,
               "status": "passed"
             },
             "match": {
@@ -143,7 +143,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1752015100,
+              "duration": 887424000,
               "status": "passed"
             },
             "line": 10,
@@ -155,7 +155,7 @@
           },
           {
             "result": {
-              "duration": 1082988200,
+              "duration": 1398759900,
               "status": "passed"
             },
             "line": 11,
@@ -173,6 +173,94 @@
     "id": "criar-conta",
     "keyword": "Funcionalidade",
     "uri": "src/test/resources/features/Conta.feature",
+    "tags": []
+  },
+  {
+    "line": 5,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 976448300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Que eu já seja um usuário cadastrado e deseje cadastrar uma movimentação",
+            "match": {
+              "location": "MovStep.queEuJáSejaUmUsuárioCadastradoEDesejeCadastrarUmaMovimentação()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2774573800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.configurarNavegador()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Cadastrar uma movimentação",
+        "description": "",
+        "id": "criar-uma-movimentação;cadastrar-uma-movimentação",
+        "after": [
+          {
+            "result": {
+              "duration": 532271800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.fecharNavegador()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1481215000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Eu clicar no botão cadastrar movimentacao",
+            "match": {
+              "location": "MovStep.euClicarNoBotãoCadastrarMovimentacao()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 25481400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Serei redirecionado para página de cadastro efetuarei o cadastro de uma movimentacao",
+            "match": {
+              "location": "MovStep.sereiRedirecionadoParaPáginaDeCadastroEfetuareiOCadastroDeUmaMovimentacao()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      }
+    ],
+    "name": "Criar uma movimentação",
+    "description": "",
+    "id": "criar-uma-movimentação",
+    "keyword": "Funcionalidade",
+    "uri": "src/test/resources/features/Mov.feature",
     "tags": []
   }
 ]
