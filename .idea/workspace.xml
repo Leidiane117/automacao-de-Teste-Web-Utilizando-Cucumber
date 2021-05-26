@@ -214,7 +214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622063358834</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="&quot;&quot;">
+      <created>1622063483555</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1622063483555</updated>
+    </task>
+    <task id="LOCAL-00010" summary="&quot;&quot;">
+      <created>1622063644445</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1622063644445</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,7 +250,8 @@
     <MESSAGE value="&quot;Criando Movimentação&quot;" />
     <MESSAGE value="&quot;Finalização dos testes&quot;" />
     <MESSAGE value="&quot;Remoção pasta Target&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Remoção pasta Target&quot;" />
+    <MESSAGE value="&quot;&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
