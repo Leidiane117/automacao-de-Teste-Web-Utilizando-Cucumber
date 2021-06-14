@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -22,9 +23,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/resources/allure.properties" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectId" id="1sR8NssGIkr3rhNV868fdjP3Rdt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -35,24 +37,27 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="GitStage.ChangesTree.GroupingKeys" value="directory&#10;module&#10;repository" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TODO_SCOPE" value="All Places" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Modelo-de-Automacao-Utilizando-cucumber-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api-model-project" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.13908207" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lesz\IdeaProjects\Automação_ Utilizando_Cucumber _Seu Barriga\src\test\resources\features\comportamento" />
       <recent name="C:\Users\lesz\IdeaProjects\Automação_ Utilizando_Cucumber _Seu Barriga" />
       <recent name="C:\Users\lesz\IdeaProjects\Automação_ Utilizando_Cucumber _Seu Barriga\target" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="JUnit.Runner (1)">
     <configuration name="Feature: Movimentacao" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="3" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Movimentacao.feature" />
@@ -92,7 +97,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <configuration name="Runner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Automacao_Utilizando_Cucumber_Seu Barriga" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Automação_ Utilizando_Cucumber _Seu Barriga" />
       <extension name="coverage">
         <pattern>
@@ -110,7 +130,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Automação_ Utilizando_Cucumber _Seu Barriga" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="Automacao_Utilizando_Cucumber_Seu_Barriga [clean...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -120,7 +140,11 @@
               <set />
             </option>
             <option name="goals">
-              <list />
+              <list>
+                <option value="clean" />
+                <option value="test" />
+                <option value="allure:report" />
+              </list>
             </option>
             <option name="pomFileName" />
             <option name="profilesMap">
@@ -134,13 +158,16 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.Runner" />
-      <item itemvalue="Maven.Automação_ Utilizando_Cucumber _Seu Barriga" />
       <item itemvalue="Cucumber Java.Feature: Movimentacao" />
       <item itemvalue="Cucumber Java.Scenario: Criar Movimentação" />
+      <item itemvalue="JUnit.Runner" />
+      <item itemvalue="JUnit.Runner (1)" />
+      <item itemvalue="Maven.Automacao_Utilizando_Cucumber_Seu_Barriga [clean...]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Runner (1)" />
+        <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: Criar Movimentação" />
         <item itemvalue="Cucumber Java.Feature: Movimentacao" />
       </list>
@@ -242,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622064142125</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="&quot;&quot;">
+      <created>1622064294967</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1622064294967</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,6 +292,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="&quot;Primeiro commit&quot;" />
     <MESSAGE value="&quot;Criando movimentação&quot;" />
     <MESSAGE value="&quot;Criando conta para Movimentação&quot;" />
@@ -272,6 +307,9 @@
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Automacao_Utilizando_Cucumber_Seu_Barriga$Runner__1_.ic" NAME="Runner (1) Coverage Results" MODIFIED="1623675145410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>runner.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Automação__Utilizando_Cucumber__Seu_Barriga$Scenario__Criar_Movimentação.ic" NAME="Scenario: Criar Movimentação Coverage Results" MODIFIED="1622054454352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>cucumber.api.cli.*</FILTER>
     </SUITE>

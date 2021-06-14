@@ -32,6 +32,4 @@ Requisitos de software e hardware necessários para executar este projeto de aut
 * Cucumber - Responsável pela especificação executável de cenários
 * Cucumber Junit - Responsável por validar as condições de teste
 
-
-  ![Tela](src/seu_barriga.png)
  

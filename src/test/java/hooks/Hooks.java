@@ -1,9 +1,12 @@
 package hooks;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import driver.Driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
+import report.Report;
+
 import java.util.concurrent.TimeUnit;
 
 
@@ -19,10 +22,16 @@ public class Hooks {
     }
 
     @After
-    public void fecharNavegador(){
-        Driver.getDriver().close();
+     public void tearDown(Scenario scenario){
 
+            if(scenario.isFailed())
+                Report.takeScreenshot();
+
+            Driver.getDriver().quit();
+        }
 
     }
 
-}
+
+
+
