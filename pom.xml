@@ -19,7 +19,7 @@
         <cucumber.version>3.0.2</cucumber.version>
         <log4j.version>2.13.0</log4j.version>
         <env>des</env> <!-- des, prod ou uat-->
-        <token>ypyyfmtbmjwj5hdm6wvu5lrme7iqqmp3k6ixjvmddjzuvjxibfyq</token>
+       
     </properties>
 
     <build>
